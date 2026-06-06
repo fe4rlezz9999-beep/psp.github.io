@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    /* បង្កើត Container សម្រាប់ដាក់ Form ឱ្យនៅចំកណ្តាល */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+        background-color: #f8f9fa; /* ពណ៌ផ្ទៃក្រោយស្រាលស្រទន់ */
+    }
+
+    /* រចនាប្រអប់ Form Login */
+    .login-card {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ដាក់ស្រមោលតិចៗឱ្យមើលទៅលេចធ្លោ */
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    /* រចនាចំណងជើង "Login" */
+    .login-card h2 {
+        margin-bottom: 25px;
+        color: #003399; /* ពណ៌ខៀវស៊ីគ្នាជាមួយ Logo Nexa */
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    /* រចនាប្រអប់ Input (Username & Password) */
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    /* នៅពេលអ្នកប្រើចុចលើប្រអប់ Input */
+    .form-group input:focus {
+        border-color: #003399;
+        box-shadow: 0 0 8px rgba(0, 51, 153, 0.2);
+        outline: none;
+    }
+
+    /* រចនាប៊ូតុង Login */
+    .btn-login {
+        width: 100%;
+        padding: 12px;
+        background-color: #003399; /* ពណ៌ខៀវដិត */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* នៅពេលយក Mouse ទៅដាក់លើប៊ូតុង */
+    .btn-login:hover {
+        background-color: #002266;
+    }
+</style>
+
+<div class="login-container">
+    <div class="login-card">
+        <h2>Login</h2>
+        
+        <form method="POST">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

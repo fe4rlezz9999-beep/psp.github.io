@@ -1,0 +1,245 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+}
+
+.facebook-link{
+    text-decoration:none;
+    color:#555;
+}
+
+.facebook-link:hover{
+    color:#0f4c9c;
+}
+
+.no-image{
+    width:100%;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f1f1f1;
+    color:#888;
+    border-radius:5px;
+}
+
+.hero-text h1{
+    font-size:40px;
+    margin-bottom:10px;
+    color:#0f4c9c;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#555;
+}
+.brand-card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.brand-card:hover{
+    background:#0f4396;
+    color:#fff;
+    transform:translateY(-3px);
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+}
+
+.facebook-link{
+    text-decoration:none;
+    color:#555;
+}
+
+.facebook-link:hover{
+    color:#0f4c9c;
+}
+
+.no-image{
+    width:100%;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f1f1f1;
+    color:#888;
+    border-radius:5px;
+}
+
+.hero-text h1{
+    font-size:40px;
+    margin-bottom:10px;
+    color:#0f4c9c;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#555;
+}
+
+.brand-card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.brand-card:hover{
+    background:#0f4396;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* ==========================================================================
+   កូដបន្ថែមថ្មី៖ ANIMATION & GRADIENT FOR HOME & DETAIL PAGE
+   ========================================================================== */
+
+/* --- 1. Animation សម្រាប់កាតផលិតផលនៅទំព័រ Home --- */
+.product-card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 30px rgba(15, 67, 150, 0.12) !important;
+    border-color: #0f4396 !important;
+}
+
+.product-img {
+    transition: transform 0.4s ease-in-out !important;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.06) !important;
+}
+
+.product-card .btn-outline-primary {
+    transition: all 0.3s ease !important;
+}
+
+.product-card:hover .btn-outline-primary {
+    background-color: #0f4396 !important;
+    color: #ffffff !important;
+    border-color: #0f4396 !important;
+}
+
+/* --- 2. ស្ទីលដេញពណ៌ ខៀវ-ស សម្រាប់ទំព័រ Detail (Product Detail) --- */
+.detail-bg {
+    min-height: 80vh;
+    background: linear-gradient(135deg, #eef2f7 0%, #ffffff 50%, #d9e2ec 100%);
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(15, 67, 150, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    max-width: 1000px;
+    width: 100%;
+}
+
+.detail-img-container {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+.detail-brand {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #0f4396;
+    background-color: #eef2f7;
+    padding: 6px 16px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+/* តម្លៃផលិតផលច្បាស់ក្រឡែត */
+.detail-price {
+    font-size: 32px;
+    font-weight: 900;
+    color: #0f4396; 
+    margin: 15px 0;
+}
+
+.detail-desc {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 15px;
+    color: #475569;
+}
+
+/* ប៊ូតុងរាងមូលស្អាតៗ */
+.btn-fav-add {
+    background: linear-gradient(135deg, #0f4396 0%, #1e60be 100%);
+    color: white !important;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(15, 67, 150, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-fav-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(15, 67, 150, 0.3);
+}
+
+.btn-fav-remove {
+    background-color: #fef2f2;
+    color: #dc2626 !important;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: 1px solid #fee2e2;
+    transition: all 0.3s ease;
+}
+
+.btn-fav-remove:hover {
+    background-color: #fee2e2;
+}
+
+.btn-back {
+    background-color: white;
+    color: #475569 !important;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: 1px solid #cbd5e1;
+    transition: all 0.3s ease;
+}
+.btn-back:hover {
+    background-color: #f8fafc;
+}

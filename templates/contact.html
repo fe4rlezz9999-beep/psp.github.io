@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<style>
+.contact-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+
+.contact-card{
+    width:1000px;
+    background:white;
+    border-radius:20px;
+    padding:50px;
+    display:flex;
+    gap:60px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.contact-left{
+    flex:1;
+}
+
+.contact-left h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.contact-left p{
+    color:#666;
+    line-height:1.8;
+}
+
+.contact-info{
+    margin-top:40px;
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.contact-right{
+    flex:1;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+.contact-form button{
+    border:none;
+    padding:15px;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    background:linear-gradient(
+        90deg,
+        #7b2ff7,
+        #f107a3,
+        #ff6a00
+    );
+}
+
+.contact-form button:hover{
+    opacity:.9;
+}
+</style>
+
+<div class="contact-wrapper">
+
+    <div class="contact-card">
+
+        <div class="contact-left">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                We are committed to processing the information
+                in order to contact you and talk about your project.
+            </p>
+
+            <div class="contact-info">
+                <p>📧 PhanithPhoneShop@email.com</p>
+                <p>📍 Address: Phnom Penh, Cambodia</p>
+                <p>📞 +855 90 6100 80</p>
+            </div>
+
+        </div>
+
+        <div class="contact-right">
+
+            <form method="POST" class="contact-form">
+                {% csrf_token %}
+
+                <input type="text"
+                       name="name"
+                       placeholder="Name"
+                       required>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Email"
+                       required>
+
+                <input type="text"
+                       name="phone"
+                       placeholder="Phone"
+                       required>
+
+                <textarea
+                    name="message"
+                    placeholder="Type your message here..."
+                    required></textarea>
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

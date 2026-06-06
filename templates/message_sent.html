@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Message Sent{% endblock %}
+
+{% block content %}
+
+<div style="text-align:center; margin-top:100px;">
+    <h1>✅ Your Message Has Been Sent</h1>
+
+    <p>
+        Your message has been sent to the admin successfully.
+    </p>
+
+    <a href="{% url 'home' %}">
+        <button>Back To Home</button>
+    </a>
+</div>
+
+{% endblock %}

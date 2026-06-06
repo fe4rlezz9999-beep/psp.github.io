@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-4">
+    <div class="row g-4">
+    <div class="col-md-9">
+    <div id="heroCarousel" class="carousel slide shadow-sm rounded-3 overflow-hidden" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner" style="min-height: 350px;">
+            
+            <div class="carousel-item active" style="min-height: 350px; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://mgstore.ch/cdn/shop/files/apple_black_banner.jpg?v=1683814721&width=1920'); background-size: cover; background-position: center;">
+                <div class="p-5 d-flex flex-column justify-content-center align-items-start h-100 text-white" style="min-height: 350px; max-width: 550px;">
+                    <h1 class="fw-bold mb-2 text-start" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Iphone 16pro max series</h1>
+                    <p class="text-start mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.6); font-size: 15px; color: #eaeaea;">
+                        The iPhone 16 Pro Max is Apple’s flagship smartphone, featuring a massive 6.9-inch display, a powerful A18 Pro chip, and exceptional battery life.
+                    </p>
+                    <a href="#" class="btn px-4 py-2 text-white fw-bold d-flex align-items-center gap-2" style="background-color: #0f4396; border-radius: 6px;">
+                        AVAILABLE NOW! <i class="fa-solid fa-chevron-right small"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="min-height: 350px; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://pbs.twimg.com/media/Gh6ySRgWAAE4CXo.jpg'); background-size: cover; background-position: center;">
+                <div class="p-5 d-flex flex-column justify-content-center align-items-start h-100 text-white" style="min-height: 350px; max-width: 550px;">
+                    <h1 class="fw-bold mb-2 text-start" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Samsung galaxy s25 ultra</h1>
+                    <p class="text-start mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.6); font-size: 15px; color: #eaeaea;">
+                        The Samsung Galaxy S25 Ultra is a premium flagship smartphone starting at $1,099. It features a stunning 6.9-inch AMOLED display, a durable titanium frame, and the blazing-fast Snapdragon 8 Elite processor.
+                    </p>
+                    <a href="#" class="btn px-4 py-2 text-white fw-bold d-flex align-items-center gap-2" style="background-color: #0f4396; border-radius: 6px;">
+                        VIEW DETAILS <i class="fa-solid fa-chevron-right small"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="min-height: 350px; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.gadgets360cdn.com/large/Vivo_V21e_poster_specs_leak_1623911420279.jpg'); background-size: cover; background-position: center;">
+                <div class="p-5 d-flex flex-column justify-content-center align-items-start h-100 text-white" style="min-height: 350px; max-width: 550px;">
+                    <h1 class="fw-bold mb-2 text-start" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Vivo V21e 5G!</h1>
+                    <p class="text-start mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.6); font-size: 15px; color: #eaeaea;">
+                        Vivo V21e 5G Specifications Tipped via Leaked Poster, MediaTek Dimensity 700 SoC, 32-Megapixel Selfie Camera Expected
+                    </p>
+                    <a href="#" class="btn px-4 py-2 text-white fw-bold d-flex align-items-center gap-2" style="background-color: #0f4396; border-radius: 6px;">
+                        SHOP NOW <i class="fa-solid fa-chevron-right small"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+        
+        <div class="col-md-3">
+            <div class="bg-warning h-100 rounded-3 p-4 d-flex align-items-center justify-content-center shadow-sm" style="min-height: 350px;">
+                <h3 class="text-white fw-bold m-0">Special offer!</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
+        <h4 class="fw-bold m-0"><i class="fa-solid fa-fire text-danger me-2"></i>SPECIAL OFFER</h4>
+        <a href="#" class="text-decoration-none text-primary fw-bold" style="font-size: 14px;">View all <i class="fa-solid fa-chevron-right small"></i></a>
+    </div>
+    
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3">
+        
+        {% for product in products %}
+        <div class="col">
+            <div class="product-card p-3 text-center bg-white shadow-sm rounded border">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" class="product-img img-fluid mb-3" alt="{{ product.name }}" style="height: 160px; object-fit: contain;">
+                {% else %}
+                    <img src="{% static 'images/no-image.jpg' %}" class="product-img img-fluid mb-3" style="height: 160px; object-fit: contain;">
+                {% endif %}
+                
+                <div class="card-body p-0">
+                    <h6 class="text-dark fw-normal text-start text-truncate mb-2" style="font-size: 14px;">{{ product.name }}</h6>
+                    
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="price text-danger fw-bold fs-5">${{ product.price }}</span>
+                        {% if product.old_price %}
+                            <del class="text-muted small">${{ product.old_price }}</del>
+                        {% endif %}
+                    </div>
+                    
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100 mt-2">View Detail</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <p class="text-muted">No products yet.</p>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
